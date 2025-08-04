@@ -1,0 +1,53 @@
+body{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.navigation{
+  display:flex;
+  background-color:black;
+  align-items:center;
+}
+.humbuger{
+  display:block;
+  margin:2rem;
+}
+.humbuger span{
+  margin:0.3rem;
+  width:2rem;
+  height:0.3rem;
+  padding:0.1rem;
+  background-color:white;
+  display:block;
+}
+nav{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:1;
+}
+nav ul{
+  display:none;
+  color:white;
+  list-style:none;
+  align-items:center;
+  gap:2rem;
+  padding:1.3rem;
+  justify-content:center;
+}
+nav ul li a{
+  text-decoration:none;
+  color:inherit;
+}
+nav ul.show{
+  display:flex;
+}
+
+@media(min-width:481px){
+  .humbuger{
+    display:none;
+  }
+  nav ul{
+    display:flex;
+  }
+}
